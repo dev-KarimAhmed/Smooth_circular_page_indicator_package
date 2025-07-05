@@ -5,6 +5,10 @@ Perfect for onboarding flows, quizzes, forms, or any step-based user interface.
 
 ---
 
+![Demo](https://github.com/dev-KarimAhmed/Smooth_circular_page_indicator_package/blob/main/assets/demo.gif)
+
+---
+
 ## ✨ Features
 
 - Smooth, animated circular progress indicator
@@ -15,7 +19,7 @@ Perfect for onboarding flows, quizzes, forms, or any step-based user interface.
 
 ---
 
-![Demo](https://github.com/dev-KarimAhmed/Smooth_circular_page_indicator_package/raw/main/assets/demo.gif)
+
 
 ## 🚀 Getting Started
 
