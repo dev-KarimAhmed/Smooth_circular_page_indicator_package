@@ -15,6 +15,8 @@ Perfect for onboarding flows, quizzes, forms, or any step-based user interface.
 
 ---
 
+![Demo](https://github.com/dev-KarimAhmed/Smooth_circular_page_indicator_package/raw/main/assets/demo.gif)
+
 ## 🚀 Getting Started
 
 Add this to your `pubspec.yaml`:
