@@ -1,39 +1,84 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# Smooth Circular Page Indicator
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
+A lightweight and customizable **smooth circular page indicator** widget for Flutter.  
+Perfect for onboarding flows, quizzes, forms, or any step-based user interface.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
+---
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+## ✨ Features
 
-## Features
+- Smooth, animated circular progress indicator
+- Fully customizable colors, sizes, and stroke width
+- Center icon/button with tap support
+- Accessible with semantic labels
+- Easy to integrate and reuse
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+---
 
-## Getting started
+## 🚀 Getting Started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Add this to your `pubspec.yaml`:
 
-## Usage
+```yaml
+dependencies:
+  smooth_circular_page_indicator: ^0.0.1
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+```
+----
+## 🎯 Usage Example
 
 ```dart
-const like = 'sample';
+
+
+SmoothCircularPageIndicator(
+  currentStep: 2, // Zero-based index
+  totalSteps: 5,
+  progressColor: Colors.blue,
+  backgroundColor: Colors.grey.shade300,
+  icon: Icons.arrow_forward_ios_rounded,
+  iconColor: Colors.white,
+  size: 80.0,
+  strokeWidth: 5.0,
+  animationDuration: Duration(milliseconds: 500),
+  onTap: () {
+    // Do something when tapped
+  },
+  semanticLabel: 'Next step',
+),
 ```
 
-## Additional information
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+## 🧩 Parameters
+
+| Property            | Type            | Description                                 | Default                           |
+| ------------------- | --------------- | ------------------------------------------- | --------------------------------- |
+| `currentStep`       | `int`           | Current step (zero-based).                  | —                                 |
+| `totalSteps`        | `int`           | Total number of steps (must be > 0).        | —                                 |
+| `progressColor`     | `Color`         | Color of the progress arc.                  | `Colors.blue`                     |
+| `backgroundColor`   | `Color`         | Color of the background arc.                | `Colors.grey`                     |
+| `icon`              | `IconData`      | Icon displayed in the center.               | `Icons.arrow_forward_ios_rounded` |
+| `iconColor`         | `Color`         | Color of the center icon.                   | `Colors.white`                    |
+| `size`              | `double`        | Diameter of the widget.                     | `80.0`                            |
+| `strokeWidth`       | `double`        | Width of the circular stroke.               | `5.0`                             |
+| `animationDuration` | `Duration`      | Duration of the progress animation.         | `500 milliseconds`                |
+| `onTap`             | `VoidCallback?` | Callback triggered when tapped.             | `null`                            |
+| `semanticLabel`     | `String?`       | Optional semantic label for screen readers. | `null`                            |
+
+
+## 📌 Example Use Cases
+- Onboarding screens
+
+- Multi-step forms
+
+- Quizzes & surveys
+
+- Tutorials & walkthroughs
+
+- Any step-based progress UI
+
+## 🛠️ Contributing
+Contributions, suggestions, and bug reports are welcome!
+If you’d like to improve this package, please open an issue or pull request on GitHub.
+
+## 📄 License
+This project is licensed under the MIT License.
