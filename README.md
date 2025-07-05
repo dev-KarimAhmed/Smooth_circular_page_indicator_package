@@ -5,7 +5,7 @@ Perfect for onboarding flows, quizzes, forms, or any step-based user interface.
 
 ---
 
-![Demo](https://github.com/dev-KarimAhmed/Smooth_circular_page_indicator_package/blob/main/assets/demo.gif)
+![Demo](https://github.com/dev-KarimAhmed/Smooth_circular_page_indicator_package/raw/main/assets/demo.gif)
 
 ---
 
@@ -27,7 +27,7 @@ Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  smooth_circular_page_indicator: ^0.0.1
+  smooth_circular_page_indicator: ^0.0.2
 
 ```
 ----

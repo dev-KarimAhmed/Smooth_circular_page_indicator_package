@@ -4,3 +4,9 @@
 - Provides a customizable, animated circular page indicator widget.
 - Supports custom colors, size, stroke width, icons, tap callbacks, and accessibility.
 - Useful for onboarding flows, step-based UIs, quizzes, and forms.
+
+## 0.0.2
+
+- second release of `smooth_circular_page_indicator`.
+- enhance readme.
+- provide demo.

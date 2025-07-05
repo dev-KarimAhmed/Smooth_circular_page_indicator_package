@@ -3,7 +3,7 @@ description: >
   A customizable smooth circular page indicator widget for Flutter.
   Perfect for onboarding, quizzes, or step-based UIs with built-in animations,
   icons, and tap handling.
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/dev-KarimAhmed/Smooth_circular_page_indicator_package
 repository: https://github.com/dev-KarimAhmed/Smooth_circular_page_indicator_package
 issue_tracker: https://github.com/dev-KarimAhmed/Smooth_circular_page_indicator_package/issues

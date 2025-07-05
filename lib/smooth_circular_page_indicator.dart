@@ -1,7 +1,13 @@
+/// A Flutter widget for a customizable smooth circular page indicator.
+/// Provides a reusable progress indicator for onboarding,
+/// quizzes, or any step-based UI.
+
+// ignore_for_file: dangling_library_doc_comments
+
 import 'package:flutter/material.dart';
 
 /// A customizable circular progress indicator with a smooth animation and a centered icon/button.
-/// 
+///
 /// [SmoothCircularPageIndicator] is reusable and can be used in onboarding flows,
 /// quizzes, or any step-based UI. It supports custom icons, colors, sizes, and tap callbacks.
 class SmoothCircularPageIndicator extends StatefulWidget {
@@ -38,6 +44,7 @@ class SmoothCircularPageIndicator extends StatefulWidget {
   /// Optional semantic label for accessibility.
   final String? semanticLabel;
 
+  /// Creates a [SmoothCircularPageIndicator] widget.
   const SmoothCircularPageIndicator({
     super.key,
     required this.currentStep,
@@ -64,7 +71,7 @@ class _SmoothCircularPageIndicatorState
   Widget build(BuildContext context) {
     final double progress =
         (widget.currentStep.clamp(0, widget.totalSteps) + 1) /
-            widget.totalSteps;
+        widget.totalSteps;
 
     return Semantics(
       label: widget.semanticLabel,
@@ -74,10 +81,7 @@ class _SmoothCircularPageIndicatorState
           alignment: Alignment.center,
           children: [
             TweenAnimationBuilder<double>(
-              tween: Tween<double>(
-                begin: 0.0,
-                end: progress,
-              ),
+              tween: Tween<double>(begin: 0.0, end: progress),
               duration: widget.animationDuration,
               curve: Curves.easeInOut,
               builder: (context, value, child) {
@@ -93,11 +97,7 @@ class _SmoothCircularPageIndicatorState
                 );
               },
             ),
-            Icon(
-              widget.icon,
-              color: widget.iconColor,
-              size: widget.size * 0.5,
-            ),
+            Icon(widget.icon, color: widget.iconColor, size: widget.size * 0.5),
           ],
         ),
       ),
